@@ -6,8 +6,8 @@ plt.style.use('seaborn')
 
 
 st.title('California Housing Data (1990) by Yuxin Ou')
-path = 'C:/Users/HP/Documents/housing.csv/housing.csv'
-df = pd.read_csv(path)
+
+df = pd.read_csv( 'C:/Users/HP/Documents/housing.csv/housing.csv')
 
 # note that you have to use 0.0 and 40.0 given that the data type of population is float
 price_filter = st.slider('Median House Price (Millions):', 0, 200000, 500001)  # min, max, default
